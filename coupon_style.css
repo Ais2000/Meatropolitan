@@ -1,0 +1,10 @@
+.header {
+    max-width: 100%;
+    font-size: 50px;
+    font-family: Righteous;
+    text-align: center;
+}
+
+body {
+    background-image: url(images/wood_bg.jpg);
+}
