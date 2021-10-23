@@ -150,3 +150,18 @@ h1 {
     width: 2000px;
     max-width: 100%;
 }
+
+#message {
+  padding-top: 30px;
+  font-size: 50px;
+  font-family: Courgette;
+  color: white;
+}
+
+p {
+  padding-top: 50px;
+  text-align: center;
+  font-family: Righteous;
+  font-size: 30px;
+  padding-bottom: 10px;
+}

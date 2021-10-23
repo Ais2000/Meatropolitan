@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rokkitt">
+    </head>
+    <style>
+
+        body {
+            background-image: url(images/order_bg.png);
+        }
+
+        .container {
+            width: 500px;
+            height: 500px;
+            max-width: 100%;
+            margin-left: 650px;
+            margin-top: 200px;
+            float: left;
+            border-radius: 7%;
+            border: solid;
+            border-color: silver;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        form {
+            margin-top: 220px;
+            margin-left: 80px;
+            font-family: Rokkitt;
+            font-size: 30px;
+            color: white;
+        }
+
+        input {
+            margin-left: 100px;
+            width: 200px;
+            height: 35px;
+        }
+        
+        button {
+            width: 130px;
+            height: 30px;
+            margin-top: 100px;
+            margin-left: 350px;
+            font-family: Rokkitt;
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+    <body>
+        <div class="container">
+            <form>
+                <label id="location">Where will we deliver? </label>
+                <input 
+                type="text" 
+                name="location" 
+                id="location" 
+                required
+                />
+            </form>
+            <button>
+                Proceed
+            </button>
+    </body>
+
+</html>

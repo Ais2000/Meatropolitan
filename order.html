@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="order_style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rokkitt">
+        
+        <script>
+            function map()  {
+                window.location.replace("file:///C:/Users/Steph/Desktop/recallHTML/index.html#map")
+            }
+
+            function menu() {
+                window.location.replace("file:///C:/Users/Steph/Desktop/recallHTML/menu.html")
+            }
+
+            function deliver() {
+                window.location.replace("")
+            }
+
+        </script>
+
+        <title>
+            Order
+        </title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+            <h1>Order Form</h1>
+        </div>
+        <form>
+            <div id="number">
+            <label id="number-label" for="number"> Order Quantity:  </span></label>
+            <input 
+            type="number" 
+            name="age" 
+            id="number" 
+            min="1" 
+            max="99"
+            required
+            />
+
+            <iframe width="315" height="340" src="http://www.a-calculator.com/basic/embed.html" frameborder="0" allowtransparency="true"></iframe>
+            </div>
+
+            <h4>Which do you prefer? </h4>
+            <button type="button" onclick="map()">
+                Pick Up
+            </button>
+
+            <button type="button" onclick="deliver()">
+                Delivery
+            </button>
+
+            <div class="btn_back"> 
+                <button id="back" type="button" onclick="menu()">
+                    Go back
+                </button>
+            </div>
+            
+
+        </form>
+        </div>
+    
+        
+    </body>
+</html>

@@ -83,20 +83,25 @@ li:hover {
 }
 
 .header {
-    height: 200px;
-    max-width: 100%;
-    display: block;
-    padding-top: 85px;
-    text-align: center;
-    font-size: 70px;
-    font-family: Righteous;
-    color: rgb(153, 77, 10);
+  display: block;
+  height: 100px; 
+  max-width: 100%;
+  padding: 200px 20px 200px 20px;
+  text-align: center;
+  font-size: 65px;
+  font-family: Righteous;
+  color:rgb(153, 77, 0);
+  font-weight: bolder;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 body{
 
     background-image: url(images/menu_bg.png);
     background-size: cover;
+    background-position: center;
 }
 
 .container_menu {

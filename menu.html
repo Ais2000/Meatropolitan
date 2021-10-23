@@ -3,7 +3,7 @@
     <head>
         <link rel="stylesheet" href="menu_style.css">
         <meta charset="UTF-8"
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Righteous">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Philosopher">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Mitr">
@@ -17,7 +17,40 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-       
+
+       <script>
+           function menu() {
+                window.location.replace("file:///C:/Users/Steph/Desktop/recallHTML/menu.html")
+            }
+
+           function home() {
+               window.location.replace("file:///C:/Users/Steph/Desktop/recallHTML/index.html")
+           }
+
+           function shop() {
+                window.location.replace("file:///C:/Users/Steph/Desktop/recallHTML/shop.html")
+            }
+
+            function about() {
+                window.location.replace("file:///C:/Users/Steph/Desktop/recallHTML/index.html#about")
+            }
+
+            function faqs() {
+                window.location.replace("file:///C:/Users/Steph/Desktop/recallHTML/index.html#faqs")
+            }
+
+            function order_form() {
+                window.location.replace("file:///C:/Users/Steph/Desktop/recallHTML/order.html")
+            }
+
+            function saveOrder() {
+                var name = document.getElementById('btn').value;
+                localStorage.setItem('h1', btn);
+            }
+
+    
+
+       </script>
         
         <title>Menu</title>
     </head>
@@ -33,11 +66,11 @@
         <div id="home">
             <div class="nav_bar">
                 <ul>
-                        <a href="#faqs"><li><i class="fa fa-commenting-o" style="font-size:40px"></i>FAQs</li></a>
-                        <a href="#about"><li><i class="fa fa-info-circle" style="font-size:40px"></i>ABOUT</li></a>
-                        <a href="file:///C:/Users/Steph/Desktop/recallingHTML/page/coupon.html" target="_blank"><li><i class="fa fa-money" style="font-size:40px"></i> COUPON</li></a>
-                        <a href="file:///C:/Users/Steph/Desktop/recallingHTML/menu.html" target="_blank"><li><i class="fa fa-reorder" style="font-size:40px"></i>MENU</li></a>
-                        <a href="#home"><li><i class="fa fa-home" style="font-size:40px"></i>HOME</li></a>
+                        <a onclick="faqs()"><li><i class="fa fa-commenting-o" style="font-size:40px"></i>FAQs</li></a>
+                        <a onclick="about() "><li><i class="fa fa-info-circle" style="font-size:40px"></i>ABOUT</li></a>
+                        <a onclick="shop()"><li><i class="fa fa-money" style="font-size:40px"></i>SHOP</li></a>
+                        <a onclick="menu()" target="_blank"><li><i class="fa fa-reorder" style="font-size:40px"></i>MENU</li></a>
+                        <a onclick="home()"><li><i class="fa fa-home" style="font-size:40px"></i>HOME</li></a>
                     </div>
                 </ul>
             
@@ -50,7 +83,7 @@
             <h2>Chicken Teriyaki</h2>
             <img src="images/chicken_teriyaki.jpg" alt="Chicken Teriyaki" width="380px" height="350px">
             <p>Grilled with a highly flavoured glaze of soy sauce and sake or mirin (sweet wine). Garlic and fresh ginger are sometimes added to the mixture.</p>
-            <button>Order</button>
+            <button id="btn" type="button" onclick="order_form()">Order</button>
         </div>
 
         <div class="container_menu">
